@@ -52,7 +52,7 @@ function task_3() {
       alert(num_1 + num_2);
     }
   } catch (err) {
-    console.err(err.message);
+    console.log(err.message);
   }
 }
 
@@ -74,6 +74,27 @@ function div(num_1, num_2) {
 }
 
 // 5. Арифметические операции продолжение
+function mathOperation(arg1, arg2, operation) {
+  let res;
+  switch (operation) {
+    case "sum":
+      res = sum(arg1, arg2);
+      break;
+    case "sub":
+      res = sub(arg1, arg2);
+      break;
+    case "mul":
+      res = mul(arg1, arg2);
+      break;
+    case "div":
+      res = div(arg1, arg2); 
+      break;
+    default:
+      res = "Неизвестная операция";
+  }
+  return res;
+}
+
 function task_5() {
   let num_1 = document.getElementById("task_5_num_1").value;
   let num_2 = document.getElementById("task_5_num_2").value;
@@ -81,25 +102,9 @@ function task_5() {
   try {
     num_1 = Number(num_1);
     num_2 = Number(num_2);
-    let res;
-    switch (op) {
-      case "sum":
-        res = sum(num_1, num_2);
-        break;
-      case "sub":
-        res = sub(num_1, num_2);
-        break;
-      case "mul":
-        res = mul(num_1, num_2);
-        break;
-      case "div":
-        res = div(num_1, num_2); 
-        break;
-      default:
-        res = "Неизвестная операция";
-    }
+    let res = mathOperation(num_1, num_2, op);
     alert('Результат: ' + res);
   } catch (err) {
-    console.err(err.message);
+    console.log(err.message);
   }
 } 
