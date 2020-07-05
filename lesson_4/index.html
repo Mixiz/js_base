@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS base</title>
+    <script src="./tasks.js"></script>
+    <script src="./game.js"></script>
+    <link rel="stylesheet" type="text/css" href="./styles.css" >
+</head>
+
+<body>
+  <p>
+    1. Число в объект
+    <input type="text" id="task_1_num" placeholder="число">
+    <button onclick="task_1()">Тык</button>
+  <p>
+    1.1. Конструктор Product
+    <input type="text" id="task_1_1_name" placeholder="name">
+    <input type="text" id="task_1_1_price" placeholder="price">
+    <button onclick="task_1_1()">Тык</button>
+  <p>
+    1.2. Конструкторы продолжение
+    <input type="text" id="task_1_2_author" placeholder="author">
+    <input type="text" id="task_1_2_text" placeholder="text">
+    <input type="text" id="task_1_2_date" placeholder="date">
+    <button onclick="task_1_2()">Тык</button>
+  <p>
+    Игра бродилка
+    <select id="difficult" size="4">
+      <option value="1" selected="selected">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+    <button onclick="init_game()" id="game_start">Начать игру</button>
+    <input type="text" placeholder="Клавишу нажимать тут" id="kinput">
+    <div id="game_field">
+    </div>
+</body>
+</html> 
