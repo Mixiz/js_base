@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS base</title>
+    <script src="./tasks.js"></script>
+    <script src="./chess.js"></script>
+    <link rel="stylesheet" type="text/css" href="./styles.css" >
+</head>
+
+<body>
+  <p>
+    3. Модальное окно
+    <button class="task_3">Показать модальное окно</button>
+    <div class="modal hidden">
+      <div class="modal-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et tellus porta ex euismod imperdiet. Proin nec velit dignissim, vulputate ligula sit amet, auctor nisl. Curabitur euismod ex urna, sit amet tempor leo aliquam id. Praesent non orci nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer mattis sapien sit amet ipsum sagittis, in accumsan orci posuere. Nam porttitor ut justo ac vestibulum. Aliquam ac urna est. Sed interdum tortor et venenatis tincidunt. Quisque eu tincidunt neque. Quisque cursus, sapien eu pulvinar auctor, diam sem consectetur dolor, vel varius augue turpis id enim. Ut non tristique odio.
+      </div>
+      <button class="modal-button">X</button>
+    </div>
+  <p>
+    4. Описание продукта
+    <button onclick="task_4()">Описание продукта</button>
+    <div class="product">
+      <div class="product-desc hidden">
+        Mozilla Firefox — свободный браузер на движке Gecko, разработкой и распространением которого занимается Mozilla Corporation. Второй по популярности браузер в мире и первый среди свободного ПО
+      </div>
+      <div class="product-img">
+        <img src="./firefox.png">
+      </div>
+      <button class="product-btn">Подробнее</button>
+    </div>
+    
+    <div class="product">
+      <div class="product-desc hidden">
+        Google Chrome — браузер, разрабатываемый компанией Google на основе свободного браузера Chromium и движка Blink (до апреля 2013 года использовался WebKit). Первая публичная бета-версия для Windows вышла 2 сентября 2008 года, а первая стабильная — 11 декабря 2008 года. По данным StatCounter, Chrome используют около 300 миллионов интернет-пользователей, что делает его самым популярным браузером в мире
+      </div>
+      <div class="product-img">
+        <img src="./chrome.jpg">
+      </div>
+      <button class="product-btn">Подробнее</button>
+    </div>
+    
+    <div class="product">
+      <div class="product-desc hidden">
+        Internet Explorer — программа-браузер, которую разрабатывала корпорация Microsoft с 1995 по 2015 год. Входила в комплект операционных систем семейства Windows вплоть до Windows 10, где её сменил Microsoft Edge.
+      </div>
+      <div class="product-img">
+        <img src="./ie.jpg">
+      </div>
+      <button class="product-btn">Подробнее</button>
+    </div>
+  <p>
+    5. Шахматная доска
+    <button onclick="task_5()">Построить поле</button>
+    <div id="game_field">
+    </div>
+</body>
+</html> 
