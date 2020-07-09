@@ -5,13 +5,16 @@ const COLUMNS = 8;
 
 // Рисует чистое поле шахматной доски в заданном элементе
 function generate_field(div_elem) {
-  let html_table = "<table class='game_field'>";
-  let td_class;
+  let tbl = document.createElement("table");
+  let tblBody = document.createElement("tbody");
+  tbl.classList.add('game_field');
+  
   for (let i = 0; i <= ROWS; i++) {
-    html_table += '<tr>';
+    let tr = document.createElement('tr');
     
     for (let j = 0; j <= COLUMNS; j++) {
       let val = '';
+      let td_class;
       
       if (i != ROWS && j != 0) {
         // Не края, у клеток есть цвет
@@ -33,10 +36,19 @@ function generate_field(div_elem) {
         }
       }
       
-      html_table += "<td class="+td_class+">"+val;
+      let td = document.createElement('td');
+      td.classList.add(td_class);
+      td.innerText = val;
+      tr.appendChild(td);
     }
+    
+    tblBody.appendChild(tr);
   }
-  html_table += "</table>";
   
-  div_elem.innerHTML = html_table;
+  tbl.appendChild(tblBody);
+  let old_tbl = div_elem.querySelector('table');
+  if (old_tbl != undefined) {
+    old_tbl.remove();
+  }
+  div_elem.appendChild(tbl);
 }
