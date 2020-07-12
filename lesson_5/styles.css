@@ -1,0 +1,58 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #A0A0A0;
+}
+
+.modal-text {
+  width: 80%;
+  padding: 5%;
+}
+
+.modal-button {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  height: 30px;
+  width: 30px;
+  -moz-border-radius:  20px; /* Firefox */
+  -webkit-border-radius:  20px; /* Safari 4 */
+  border-radius:  20px; /* IE 9, Safari 5, Chrome */
+}
+
+.hidden {
+  display: none;
+}
+
+
+.product {
+  display: inline-block;
+  width: 30%;
+}
+
+
+.game_field {
+  border : 1px;
+  color: brown;
+}
+
+tr, td {
+  border: 1px solid grey;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+
+.white_field {
+  background-color: #D0D0D0;
+}
+
+.black_field {
+  background-color: #404040;
+}
+
+.no_border {
+  border: 0px;
+}
