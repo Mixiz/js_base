@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS base</title>
+    <script src="./cart.js"></script>
+    <link rel="stylesheet" type="text/css" href="./styles.css" >
+</head>
+
+<body>
+  <div class="header">
+    <div class="cart-total">
+      <button class="cart-btn">Корзина</button>
+      <div class="cart-positions">
+        <table class="cart-position-tbl hidden">
+          <tr class="header-tbl">
+            <td>ИД
+            <td>Название
+            <td>Стоимость
+            <td>Количество
+            <td>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="cart">
+    <div class="cart-img">
+      <img src="./img/1.jpg">
+    </div>
+    <div class="cart-desc">
+      Товар 1
+    </div>
+    <button data-price="100" data-id="1" data-name="Товар 1" onclick="addCart(this);">Добавить в корзину</button>
+  </div>
+  
+  <div class="cart">
+    <div class="cart-img">
+      <img src="./img/2.jpg">
+    </div>
+    <div class="cart-desc">
+      Товар 2
+    </div>
+    <button data-price="50" data-id="2" data-name="Товар 2" onclick="addCart(this);">Добавить в корзину</button>
+  </div>
+  
+  <div class="cart">
+    <div class="cart-img">
+      <img src="./img/3.jpeg">
+    </div>
+    <div class="cart-desc">
+      Товар 3
+    </div>
+    <button data-price="125" data-id="3" data-name="Товар 3" onclick="addCart(this);">Добавить в корзину</button>
+  </div>
+</body>
+</html> 
