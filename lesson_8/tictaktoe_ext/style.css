@@ -1,0 +1,16 @@
+#game {
+    width: 1400px;
+    margin: 50px auto;
+}
+
+#game td {
+    width: 25px;
+    height: 22px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 12px;
+}
+
+.win-line {
+    background-color: green;
+}
